@@ -1,0 +1,28 @@
+ALGORITHM checkpoint
+VAR
+    ch : STRING;
+    x,y,z:INTEGER := 0;
+BEGIN
+Read (ch);
+//Number of characters
+    FOR i from 1 to length(ch) DO
+    x:=x+1;
+    END_FOR
+//Vowels 
+    FOR i from 1 to length(ch) DO
+    IF (ch[i]=='a' or 'u' or 'e' or 'i' or 'o') THEN
+    y:=y+1;
+    END_IF
+    END_FOR
+//Words count 
+    FOR i from 1 to length(ch) DO
+    IF(ch[i]==' ') DO
+    z=z+1;
+    END_IF
+    END_FOR
+Write(x);
+Write(y);
+Write(z);
+
+
+END
